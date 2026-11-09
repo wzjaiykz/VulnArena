@@ -58,7 +58,8 @@ jobs:
       - name: Run pytest
         run: |
           mkdir -p verification
-          pytest --collect-only -q | tail -n 3
+          # collect-only 不执行测试，必须关掉覆盖率门禁，否则 80% 门槛必然失败
+          pytest --collect-only -q --no-cov -p no:cacheprovider | tail -n 3 || true
           pytest 2>&1 | tee pytest-output.log
       - name: Surface pytest errors
         if: failure()
