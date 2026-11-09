@@ -55,7 +55,12 @@ def widen(regex: str) -> str:
     """
     widened = regex.replace(r"\s+", r"[\s/*]*").replace(r"\s*", r"[\s/*]*")
     if widened.endswith(")"):
-        widened = widened[:-1] + r"|'[\s/*]*or[\s/*]*'?[\w]|'[\s/*]*#)"
+        widened = (
+            widened[:-1]
+            + r"|un/\*\*/ion|sel/\*\*/ect|o/\*\*/r"
+            + r"|'[\s/*]*or[\s/*]*'?[\w]"
+            + r"|'[\s/*]*#)"
+        )
     return widened
 
 
