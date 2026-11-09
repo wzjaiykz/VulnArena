@@ -28,6 +28,8 @@ include = ["vulnarena*"]
 vulnarena = ["web/*", "web/assets/*", "migrations/*.sql", "intelligence/data/*.json", "templates/*.html"]
 
 [tool.pytest.ini_options]
+# 让 tests 能 import scripts.*（CI 上 pytest 不再自动加入根目录）
+pythonpath = ["."]
 asyncio_mode = "auto"
 asyncio_default_fixture_loop_scope = "function"
 testpaths = ["tests"]
