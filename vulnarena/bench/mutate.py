@@ -11,7 +11,7 @@ from urllib.parse import quote
 SPACE = re.compile(r"\s+")
 
 # 每类只是"可用的变形手法"，不代表全部绕过方式
-TRANSFORMS = ("comment", "case", "space", "keyword", "encode", "hash", "true")
+TRANSFORMS = ("comment", "case", "space", "keyword", "encode", "hash", "true", "split", "splitor")
 
 
 def _comment(sample: str) -> str:
@@ -47,6 +47,22 @@ def _always_true(sample: str) -> str:
     return re.sub(r"(?i)('\s*or\s+'?1'?\s*=\s*'?1'?)", "' or 'a'='a", sample)
 
 
+
+def _split_keyword(sample: str) -> str:
+    """把关键字本身拆开：union → un/**/ion。规则按字面匹配 union 就失效了。"""
+    for word in ("union", "select"):
+        if word in sample.lower():
+            index = sample.lower().index(word)
+            head = word[: len(word) // 2]
+            tail = word[len(word) // 2 :]
+            return sample[:index] + head + "/**/" + tail + sample[index + len(word) :]
+    return sample
+
+
+def _split_or(sample: str) -> str:
+    """布尔注入里的 or 拆开：' or 1=1 → ' o/**/r 1=1。"""
+    return re.sub(r"(?i)\bor\b", "o/**/r", sample, count=1)
+
 _FUNCTIONS = {
     "comment": _comment,
     "case": _case,
@@ -55,6 +71,8 @@ _FUNCTIONS = {
     "encode": _encode,
     "hash": _hash_comment,
     "true": _always_true,
+    "split": _split_keyword,
+    "splitor": _split_or,
 }
 
 

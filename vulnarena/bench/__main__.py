@@ -228,7 +228,7 @@ def main(argv: list[str] | None = None) -> int:
     gen.set_defaults(func=_cmd_generate)
 
     play = sub.add_parser("selfplay", help="离线回合制：红队造变体，蓝队规则被重新打分")
-    play.add_argument("--rounds", type=int, default=3)
+    play.add_argument("--rounds", type=int, default=6)
     play.add_argument("--red-limit", type=int, default=20, help="红队每轮最多新增多少条")
     play.add_argument("--category", default="sqli")
     play.add_argument("--llm", action="store_true", help="让模型当蓝队（规则提议）")
