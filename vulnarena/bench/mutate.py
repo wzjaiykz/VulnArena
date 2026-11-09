@@ -47,7 +47,6 @@ def _always_true(sample: str) -> str:
     return re.sub(r"(?i)('\s*or\s+'?1'?\s*=\s*'?1'?)", "' or 'a'='a", sample)
 
 
-
 def _split_keyword(sample: str) -> str:
     """把关键字本身拆开：union → un/**/ion。规则按字面匹配 union 就失效了。"""
     for word in ("union", "select"):
@@ -62,6 +61,7 @@ def _split_keyword(sample: str) -> str:
 def _split_or(sample: str) -> str:
     """布尔注入里的 or 拆开：' or 1=1 → ' o/**/r 1=1。"""
     return re.sub(r"(?i)\bor\b", "o/**/r", sample, count=1)
+
 
 _FUNCTIONS = {
     "comment": _comment,

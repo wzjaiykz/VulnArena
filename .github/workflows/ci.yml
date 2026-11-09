@@ -63,6 +63,11 @@ jobs:
       - name: Surface pytest errors
         if: failure()
         run: |
+          # pytest 可能被前面的步骤跳过，日志不存在时直接退出，别让这步自己变红
+          if [ ! -f pytest-output.log ]; then
+            echo "::error title=ci::an earlier step failed before pytest produced output"
+            exit 0
+          fi
           # 失败时把关键行打成 annotation，公开 API 也能读到（日志本身要管理员权限）
           grep -aE "ERROR|ImportError|ModuleNotFoundError|E   |error:|short test summary" pytest-output.log \
             | tail -n 8 \
