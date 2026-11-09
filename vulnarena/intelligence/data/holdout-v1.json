@@ -1,0 +1,307 @@
+{
+  "version": "nvd-holdout-25-v1",
+  "frozen_date": "2026-10-30",
+  "note": "10 CVEs disjoint from development seeds, two authored questions each + five fictional-product negatives. Source-checked by assistant; not independent human labels. Freeze before first measurement; if tuned on this set, treat it as development thereafter.",
+  "cases": [
+    {
+      "id": "CVE-2020-0601-cross_language",
+      "question": "Windows CryptoAPI 验证 ECC 证书时为何可能信任伪造的代码签名证书？",
+      "category": "cross_language",
+      "expected_cves": [
+        "CVE-2020-0601"
+      ],
+      "expected_abstain": false,
+      "provenance": "assistant-authored; checked against saved NVD English description; human review pending",
+      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2020-0601",
+      "source_description_sha256": "64e7e42388edca7f19fcfcb5fd1fbfa42cf6a8c280ae678e211851557a5bfbd2",
+      "label_review": "human_pending"
+    },
+    {
+      "id": "CVE-2020-0601-english",
+      "question": "Windows CryptoAPI Crypt32.dll validation of elliptic curve code signing certificates",
+      "category": "english",
+      "expected_cves": [
+        "CVE-2020-0601"
+      ],
+      "expected_abstain": false,
+      "provenance": "assistant-authored; checked against saved NVD English description; human review pending",
+      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2020-0601",
+      "source_description_sha256": "64e7e42388edca7f19fcfcb5fd1fbfa42cf6a8c280ae678e211851557a5bfbd2",
+      "label_review": "human_pending"
+    },
+    {
+      "id": "CVE-2020-0796-cross_language",
+      "question": "SMBv3 3.1.1 协议处理特定请求导致的远程代码执行漏洞",
+      "category": "cross_language",
+      "expected_cves": [
+        "CVE-2020-0796"
+      ],
+      "expected_abstain": false,
+      "provenance": "assistant-authored; checked against saved NVD English description; human review pending",
+      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2020-0796",
+      "source_description_sha256": "8ecd30b3b585fb29ec47172ebe6e91b54961e5cbd42f62300667a942fd768e28",
+      "label_review": "human_pending"
+    },
+    {
+      "id": "CVE-2020-0796-english",
+      "question": "Microsoft Server Message Block 3.1.1 protocol request handling remote code execution",
+      "category": "english",
+      "expected_cves": [
+        "CVE-2020-0796"
+      ],
+      "expected_abstain": false,
+      "provenance": "assistant-authored; checked against saved NVD English description; human review pending",
+      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2020-0796",
+      "source_description_sha256": "8ecd30b3b585fb29ec47172ebe6e91b54961e5cbd42f62300667a942fd768e28",
+      "label_review": "human_pending"
+    },
+    {
+      "id": "CVE-2021-41773-cross_language",
+      "question": "Apache HTTP Server 2.4.49 路径归一化导致目录外文件可被访问的问题",
+      "category": "cross_language",
+      "expected_cves": [
+        "CVE-2021-41773"
+      ],
+      "expected_abstain": false,
+      "provenance": "assistant-authored; checked against saved NVD English description; human review pending",
+      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2021-41773",
+      "source_description_sha256": "e8830062e21426900e3755e600477e5896b62011e8259b2d7c2fc8f4fa9b7ad4",
+      "label_review": "human_pending"
+    },
+    {
+      "id": "CVE-2021-41773-english",
+      "question": "Apache HTTP Server 2.4.49 path normalization traversal Alias require all denied CGI",
+      "category": "english",
+      "expected_cves": [
+        "CVE-2021-41773"
+      ],
+      "expected_abstain": false,
+      "provenance": "assistant-authored; checked against saved NVD English description; human review pending",
+      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2021-41773",
+      "source_description_sha256": "e8830062e21426900e3755e600477e5896b62011e8259b2d7c2fc8f4fa9b7ad4",
+      "label_review": "human_pending"
+    },
+    {
+      "id": "CVE-2022-26134-cross_language",
+      "question": "Confluence Server 与 Data Center 的 OGNL 注入允许未认证代码执行",
+      "category": "cross_language",
+      "expected_cves": [
+        "CVE-2022-26134"
+      ],
+      "expected_abstain": false,
+      "provenance": "assistant-authored; checked against saved NVD English description; human review pending",
+      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2022-26134",
+      "source_description_sha256": "2daaab08494b80f38fdda9e63fe6e14c8d91cec7a83dd151eb2b301b08e75174",
+      "label_review": "human_pending"
+    },
+    {
+      "id": "CVE-2022-26134-english",
+      "question": "Confluence Server Data Center unauthenticated OGNL injection arbitrary code execution",
+      "category": "english",
+      "expected_cves": [
+        "CVE-2022-26134"
+      ],
+      "expected_abstain": false,
+      "provenance": "assistant-authored; checked against saved NVD English description; human review pending",
+      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2022-26134",
+      "source_description_sha256": "2daaab08494b80f38fdda9e63fe6e14c8d91cec7a83dd151eb2b301b08e75174",
+      "label_review": "human_pending"
+    },
+    {
+      "id": "CVE-2022-30190-cross_language",
+      "question": "Word 调用 MSDT 的 URL 协议如何导致以调用程序权限执行代码？",
+      "category": "cross_language",
+      "expected_cves": [
+        "CVE-2022-30190"
+      ],
+      "expected_abstain": false,
+      "provenance": "assistant-authored; checked against saved NVD English description; human review pending",
+      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2022-30190",
+      "source_description_sha256": "0b2f00fb9c6d03185e6cace74db6404aa32c71cebbf027cb835a22d86a8e1c6b",
+      "label_review": "human_pending"
+    },
+    {
+      "id": "CVE-2022-30190-english",
+      "question": "MSDT called using URL protocol from Word allows arbitrary code with calling application privileges",
+      "category": "english",
+      "expected_cves": [
+        "CVE-2022-30190"
+      ],
+      "expected_abstain": false,
+      "provenance": "assistant-authored; checked against saved NVD English description; human review pending",
+      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2022-30190",
+      "source_description_sha256": "0b2f00fb9c6d03185e6cace74db6404aa32c71cebbf027cb835a22d86a8e1c6b",
+      "label_review": "human_pending"
+    },
+    {
+      "id": "CVE-2023-34362-cross_language",
+      "question": "MOVEit Transfer 的 SQL 注入如何让未认证攻击者访问数据库？",
+      "category": "cross_language",
+      "expected_cves": [
+        "CVE-2023-34362"
+      ],
+      "expected_abstain": false,
+      "provenance": "assistant-authored; checked against saved NVD English description; human review pending",
+      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2023-34362",
+      "source_description_sha256": "0c9b2676fed3a09ac22427b45fa4078f627a7436f38077893952d7e1cdae4b20",
+      "label_review": "human_pending"
+    },
+    {
+      "id": "CVE-2023-34362-english",
+      "question": "Progress MOVEit Transfer unauthenticated SQL injection database access",
+      "category": "english",
+      "expected_cves": [
+        "CVE-2023-34362"
+      ],
+      "expected_abstain": false,
+      "provenance": "assistant-authored; checked against saved NVD English description; human review pending",
+      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2023-34362",
+      "source_description_sha256": "0c9b2676fed3a09ac22427b45fa4078f627a7436f38077893952d7e1cdae4b20",
+      "label_review": "human_pending"
+    },
+    {
+      "id": "CVE-2023-46604-cross_language",
+      "question": "OpenWire 协议序列化类类型处理为何能触发任意类实例化？",
+      "category": "cross_language",
+      "expected_cves": [
+        "CVE-2023-46604"
+      ],
+      "expected_abstain": false,
+      "provenance": "assistant-authored; checked against saved NVD English description; human review pending",
+      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2023-46604",
+      "source_description_sha256": "60641874aa74168b022253f9db0f9d906597cc9092dc4bed3edf2ef11159183b",
+      "label_review": "human_pending"
+    },
+    {
+      "id": "CVE-2023-46604-english",
+      "question": "Java OpenWire protocol marshaller serialized class types classpath remote code execution",
+      "category": "english",
+      "expected_cves": [
+        "CVE-2023-46604"
+      ],
+      "expected_abstain": false,
+      "provenance": "assistant-authored; checked against saved NVD English description; human review pending",
+      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2023-46604",
+      "source_description_sha256": "60641874aa74168b022253f9db0f9d906597cc9092dc4bed3edf2ef11159183b",
+      "label_review": "human_pending"
+    },
+    {
+      "id": "CVE-2023-4966-cross_language",
+      "question": "NetScaler ADC 和 Gateway 在网关或 AAA 虚拟服务器配置下的信息泄露",
+      "category": "cross_language",
+      "expected_cves": [
+        "CVE-2023-4966"
+      ],
+      "expected_abstain": false,
+      "provenance": "assistant-authored; checked against saved NVD English description; human review pending",
+      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2023-4966",
+      "source_description_sha256": "722513ee587435b965df99f4f5e76b5b84a6ff71bc51a463e096690881e833f2",
+      "label_review": "human_pending"
+    },
+    {
+      "id": "CVE-2023-4966-english",
+      "question": "NetScaler ADC Gateway sensitive information disclosure VPN AAA virtual server",
+      "category": "english",
+      "expected_cves": [
+        "CVE-2023-4966"
+      ],
+      "expected_abstain": false,
+      "provenance": "assistant-authored; checked against saved NVD English description; human review pending",
+      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2023-4966",
+      "source_description_sha256": "722513ee587435b965df99f4f5e76b5b84a6ff71bc51a463e096690881e833f2",
+      "label_review": "human_pending"
+    },
+    {
+      "id": "CVE-2024-27198-cross_language",
+      "question": "TeamCity 2023.11.4 之前的身份认证绕过可执行管理员操作",
+      "category": "cross_language",
+      "expected_cves": [
+        "CVE-2024-27198"
+      ],
+      "expected_abstain": false,
+      "provenance": "assistant-authored; checked against saved NVD English description; human review pending",
+      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2024-27198",
+      "source_description_sha256": "254fa7747de8daafeb3de9dc033d21f9c1a114cf704cf292c4d5af1a709d3f42",
+      "label_review": "human_pending"
+    },
+    {
+      "id": "CVE-2024-27198-english",
+      "question": "JetBrains TeamCity before 2023.11.4 authentication bypass admin actions",
+      "category": "english",
+      "expected_cves": [
+        "CVE-2024-27198"
+      ],
+      "expected_abstain": false,
+      "provenance": "assistant-authored; checked against saved NVD English description; human review pending",
+      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2024-27198",
+      "source_description_sha256": "254fa7747de8daafeb3de9dc033d21f9c1a114cf704cf292c4d5af1a709d3f42",
+      "label_review": "human_pending"
+    },
+    {
+      "id": "CVE-2024-3400-cross_language",
+      "question": "PAN-OS GlobalProtect 任意文件创建与命令注入可导致防火墙 root 权限代码执行",
+      "category": "cross_language",
+      "expected_cves": [
+        "CVE-2024-3400"
+      ],
+      "expected_abstain": false,
+      "provenance": "assistant-authored; checked against saved NVD English description; human review pending",
+      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2024-3400",
+      "source_description_sha256": "6e7a4ee22e91846e4ae18b69c33ac364af3252d1b4a93659e4afaf1684ab7753",
+      "label_review": "human_pending"
+    },
+    {
+      "id": "CVE-2024-3400-english",
+      "question": "Palo Alto Networks PAN-OS GlobalProtect arbitrary file creation command injection root privileges",
+      "category": "english",
+      "expected_cves": [
+        "CVE-2024-3400"
+      ],
+      "expected_abstain": false,
+      "provenance": "assistant-authored; checked against saved NVD English description; human review pending",
+      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2024-3400",
+      "source_description_sha256": "6e7a4ee22e91846e4ae18b69c33ac364af3252d1b4a93659e4afaf1684ab7753",
+      "label_review": "human_pending"
+    },
+    {
+      "id": "holdout-missing-0",
+      "question": "ImaginaryWidgetZX 99.2 的漏洞修复版本是什么？",
+      "category": "no_evidence",
+      "expected_cves": [],
+      "expected_abstain": true,
+      "provenance": "deliberately fictional technical name"
+    },
+    {
+      "id": "holdout-missing-1",
+      "question": "NonexistentCryptoLibraryQW 的缓冲区溢出公告",
+      "category": "no_evidence",
+      "expected_cves": [],
+      "expected_abstain": true,
+      "provenance": "deliberately fictional technical name"
+    },
+    {
+      "id": "holdout-missing-2",
+      "question": "虚构产品 PhantomGatewayJK 的认证绕过漏洞",
+      "category": "no_evidence",
+      "expected_cves": [],
+      "expected_abstain": true,
+      "provenance": "deliberately fictional technical name"
+    },
+    {
+      "id": "holdout-missing-3",
+      "question": "NeverReleasedRuntimePV 的安全补丁是什么？",
+      "category": "no_evidence",
+      "expected_cves": [],
+      "expected_abstain": true,
+      "provenance": "deliberately fictional technical name"
+    },
+    {
+      "id": "holdout-missing-4",
+      "question": "UnpublishedDatabaseMN 的 SQL 注入漏洞说明",
+      "category": "no_evidence",
+      "expected_cves": [],
+      "expected_abstain": true,
+      "provenance": "deliberately fictional technical name"
+    }
+  ]
+}
